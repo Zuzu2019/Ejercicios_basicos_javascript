@@ -116,25 +116,32 @@
 //             document.write("<p>No ingresaste nada</p>")
 //         }
 
+
+//EJERCICIO PARA MOSTRAR NUMEROS CON FOR
 // for (i = -20 ; i <=30; i++) {
 //     console.log(i);
 // }
-
 // for (i = -20 ; i <=30; i++) {
 //     if(i%2===0) {
 //         console.log(i);
 //     } 
-   
+// }
+// let number = 150;
+// for (i = 2; i <=number; i++) {
+//     if(number % i === 0) {
+//         console.log("Es un numero primo" + i)
+//     } else {
+//         console.log("No es un numero primo" + i)
+//     }
 // }
 
-let number = 150;
-for (i = 2; i <=number; i++) {
-    if(number % i === 0) {
-        console.log("Es un numero primo" + i)
-    } else {
-        console.log("No es un numero primo" + i)
-    }
-}
+//EJERCICIO PARA GENERAR UNA COMPARACION 
+ let genero = prompt("Si es Mujer ingrese (M) o si es hombre ingrese (H)")
+ let edad = prompt("Ingrese su edas")
 
-
+ if(genero === "M" && Number(edad) <= 60 || genero === "H" && Number(edad) <= 65) {
+    console.log("Aun no se jubila")
+ } else {
+    console.log("Se va a jubilar")
+ }
 
