@@ -136,12 +136,27 @@
 // }
 
 //EJERCICIO PARA GENERAR UNA COMPARACION 
- let genero = prompt("Si es Mujer ingrese (M) o si es hombre ingrese (H)")
- let edad = prompt("Ingrese su edas")
+//  let genero = prompt("Si es Mujer ingrese (M) o si es hombre ingrese (H)")
+//  let edad = prompt("Ingrese su edas")
 
- if(genero === "M" && Number(edad) <= 60 || genero === "H" && Number(edad) <= 65) {
-    console.log("Aun no se jubila")
- } else {
-    console.log("Se va a jubilar")
- }
+//  if(genero === "M" && Number(edad) <= 60 || genero === "H" && Number(edad) <= 65) {
+//     console.log("Aun no se jubila")
+//  } else {
+//     console.log("Se va a jubilar")
+//  }
+
+
+//OBTENER EL VALOR DE UN INPUT Y MOSTRARLO EN CONSOLA
+document.getElementById('enviar').onclick = function() {
+    var value = document.getElementById('password').value;
+    console.log(value);
+}
+
+//TABLAS DE MULTIPLICAR DADO UN NUMERO POR EL USUARIO
+let numero = prompt("Ingrese un numero")
+numero = Number(numero)
+   for(i = 1; i <= 10; i++ ){
+        let multiplicacion = numero * i
+         console.log(`${numero} X ${i} = ${multiplicacion}`)
+   }
 
