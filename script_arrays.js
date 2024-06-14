@@ -20,10 +20,23 @@ for(i = 0; i < edades.length; i++){
 console.log(suma/edades.length)
 
 //AÑADIR ELEMENTOS A UN ARRAY VACIO DONDE EL USUARIO INGRESA LOS ELEMENTOS
-let listaDeSuper = []
-let respuesta = []
-for (let i = 0; i< 5; i++){
-    respuesta = prompt("Ingresa un producto")
-    listaDeSuper.push(respuesta)
+// let listaDeSuper = []
+// let respuesta = []
+// for (let i = 0; i< 5; i++){
+//     respuesta = prompt("Ingresa un producto")
+//     listaDeSuper.push(respuesta)
+// }
+
+
+let nombres = ['azucena', 'blanca', 'mari', 'pili', 'fatima', 'karla']
+let nombreMasCorto = "";
+let nombreMasLargo = "";
+
+for (let i = 0; i < nombres.length; i++) {
+    if (nombres[i].length >= nombreMasLargo.length) {
+    nombreMasCorto = i;
+    nombreMasLargo = nombres[i];
+    }
 }
-console.log(listaDeSuper)
+console.log(nombreMasLargo)
+
